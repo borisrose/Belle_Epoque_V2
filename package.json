@@ -4,13 +4,13 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "coverage":"npm run test -- --coverage && make-coverage-badge",
-    "start":"webpack serve --mode delopment --open --watch",
-    "lint":"npx eslint .",
-    "format:write":"npx prettier --write .",
-    "format:check":"npx prettier --check .",
-    "cypress:open":"cypress open",
-    "package":"webpack --mode production"
+    "coverage": "npm run test -- --coverage && make-coverage-badge",
+    "start": "webpack serve --mode development --open --watch",
+    "lint": "npx eslint .",
+    "format:write": "npx prettier --write .",
+    "format:check": "npx prettier --check .",
+    "cypress:open": "cypress open",
+    "package": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
@@ -50,11 +50,17 @@
     "webpack-dev-server": "^5.0.4"
   },
   "jest": {
-    "setupFiles": ["<rootDir>/__test__/setup-tests.ts"],
-    "testEnvironment":"jsdom",
-    "coverageReporters": ["json-summary"],
+    "setupFiles": [
+      "<rootDir>/__test__/setup-tests.ts"
+    ],
+    "testEnvironment": "jsdom",
+    "coverageReporters": [
+      "json-summary"
+    ],
     "collectCoverage": true,
-    "collectCoverageFrom": ["./src/**"]
+    "collectCoverageFrom": [
+      "./src/**"
+    ]
   },
   "eslintConfig": {
     "extends": "./.github/linters/eslintrc.ymlk"

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "incremental": true,
+    "checkJs": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "lib": ["DOM", "ES2015"],
+    "target": "ES2015",
+    "module": "ES6",
+    "sourceMap": false,
+    "outDir": "./dist",
+    "types": ["cypress", "jest", "@testing-library/jest-dom"]
+  },
+  "include": ["./src", "__test__/setup-tests.ts"]
+}

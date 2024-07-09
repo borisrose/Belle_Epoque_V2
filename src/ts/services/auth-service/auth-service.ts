@@ -1,10 +1,5 @@
 export default class AuthService {
-    
-    static async log(){
+  static async log() {}
 
-    }
-
-    static logout(){
-        
-    }
+  static logout() {}
 }

@@ -1,15 +1,14 @@
 .custom-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  & > section:first-of-type {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+  }
 
-    & > section:first-of-type {
-        display: flex;
-        flex-direction: column;
-    }
-
-    & > section:last-of-type {
-        display: flex;
-    }
-    
+  & > section:last-of-type {
+    display: flex;
+  }
 }

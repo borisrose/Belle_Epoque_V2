@@ -1,1 +1,1 @@
-export type onNavigateType = (h:string) => void
+export type onNavigateType = (h: string) => void;

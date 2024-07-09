@@ -1,0 +1,46 @@
+name: Prettier Check
+run-name: ${{ github.actor }} is running prettier check
+on:
+  push:
+    branches:
+      - master
+permissions:
+  contents: read
+jobs:
+  prettier-job:
+    outputs:
+      prettier-output: ${{ steps.prettier-result.outputs.result}}
+    runs-on: ubuntu-latest
+    steps:
+      #step 1
+      - name: "Put the App Folder into the Executor VM"
+        uses: actions/checkout@v4
+      #step 2
+      - name: "Installa Node.js"
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+
+      #step 3
+      - name: "Install Dependencies"
+        run: npm install
+
+      #step 4
+      - name: "Checking App w/ Prettier"
+        id: prettier
+        run: npm run format:check
+
+      #step 5
+      - name: "Result"
+        id: prettier-result
+        if: ${{ success() && steps.prettier.conclusion == 'success' }}
+        run: |
+          echo "result=🎉 All Good Concerning Prettier" >> "$GIT_OUTPUT"
+  test-conclusion:
+    runs-on: macos-latest
+    needs: prettier-job
+    steps:
+      - env:
+          PRETTIER-OUTPUT: ${{ needs.prettier-job.outputs.prettier-output }}
+        run: echo "$PRETTIER-OUTPUT"

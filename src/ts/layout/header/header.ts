@@ -1,6 +1,5 @@
 const navBar = () => {
-    return(
-        `
+  return `
              <nav>
                   <a href=""
                       <span aria-label="icone de la page d'accueil">
@@ -21,14 +20,11 @@ const navBar = () => {
               </nav>
         
         
-        `
-    )
-}
+        `;
+};
 
-
-export default function(){
-    return(
-        ` 
+export default function () {
+  return ` 
             <header class="header custom-header">
                     <a href="">
                         <span aria-label="Nom de l'application">Belle Epoque</span>
@@ -36,6 +32,5 @@ export default function(){
                     ${navBar()}
             </header>
         
-        `
-    )
+        `;
 }

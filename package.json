@@ -53,6 +53,14 @@
     "setupFiles": [
       "<rootDir>/__test__/setup-tests.ts"
     ],
+    "testMatch": [
+      "**/*.test.ts",
+      "**/*.spec.ts"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules",
+      "/dist"
+    ],
     "testEnvironment": "jsdom",
     "coverageReporters": [
       "json-summary"

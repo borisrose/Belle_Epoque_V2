@@ -1,17 +1,22 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "experimentalDecorators": true,
+    "outDir": "./dist/",
+    "sourceMap": false,
     "incremental": true,
-    "checkJs": true,
+    "tsBuildInfoFile": "./.tsbuildinfo",
     "noImplicitAny": true,
     "skipLibCheck": true,
-    "lib": ["DOM", "ES2015"],
-    "target": "ES2015",
-    "module": "ES6",
-    "sourceMap": false,
-    "outDir": "./dist",
+    "forceConsistentCasingInFileNames": true,
+    "module": "ES2022",
+    "target": "ES5",
+    "lib": ["ES2015", "DOM"],
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
     "types": ["cypress", "jest", "@testing-library/jest-dom"]
   },
-  "include": ["./src", "__test__/setup-tests.ts"]
+  "include": ["src", "__test__/setup-tests.ts"],
+  "exclude": ["node_modules"]
 }

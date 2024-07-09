@@ -1,0 +1,30 @@
+name: Jest Check
+run-name: ${{ github.actor }} is running the Jest Check
+on:
+  push:
+    branches:
+      - master
+jobs:
+  jest-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Put the App Folder into the executor VM"
+        uses: actions/checkout@v4
+
+      - name: "Install Node.js"
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+
+      - name: "Install Dependencies"
+        run: npm install
+
+      - name: "Check if All Tests Pass"
+        id: jest
+        run: npm run test
+
+      - name: "Conclusion"
+        if: ${{ success() && steps.jest.conclusion == 'success'}}
+        run: |
+          echo "✅ All Tests have Passed"

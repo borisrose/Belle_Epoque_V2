@@ -36,7 +36,7 @@ jobs:
         id: prettier-result
         if: ${{ success() && steps.prettier.conclusion == 'success' }}
         run: |
-          echo "result=🎉 All Good Concerning Prettier" >> "$GIT_OUTPUT"
+          echo "result=🎉 All Good Concerning Prettier" >> "$GITHUB_OUTPUT"
   test-conclusion:
     runs-on: macos-latest
     needs: prettier-job

@@ -1,0 +1,31 @@
+name: Coverage Check
+run-name: ${{ github.actor }} is running the coverage check
+on:
+  push:
+    branches:
+      - master
+jobs:
+  coverage-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Put the app folder into the Executor VM"
+        uses: actions/checkout@v4
+      - name: "Install Node.js"
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - name: "Install Dependencies"
+        run: npm install
+      - name: "Run the test"
+        run: npm run coverage
+      - name: "Upload Artifact"
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-badge
+          path: ./coverage/badge.svg
+          retention-days: 1
+      - name: "Download Aritfact"
+        uses: actions/download-artifact@v4
+        with:
+          name: coverage-badge

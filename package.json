@@ -63,6 +63,7 @@
     ],
     "testEnvironment": "jsdom",
     "coverageReporters": [
+      "text-summary",
       "json-summary"
     ],
     "collectCoverage": true,

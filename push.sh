@@ -40,7 +40,6 @@ while true; do
     fi
 done
 
-# Exécution conditionnelle basée sur la réponse
 if [[ "$answer" == "oui" ]]; then
     echo "Démarrage du flux de travail de push..."
     if prettier_check; then

@@ -1,0 +1,8 @@
+@startuml A3T
+hide footbox
+header A3T
+title <font color="blue">Architecture 3-tier</font>
+
+actor user as U #LightBlue
+
+@enduml

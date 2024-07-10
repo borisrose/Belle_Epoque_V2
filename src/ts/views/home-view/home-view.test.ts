@@ -17,8 +17,8 @@ describe("Home View Suite", () => {
     expect(main).toBeInTheDocument();
   });
 
-  test("should a h1 with Home Page", () => {
-    const h1 = screen.getByRole("heading");
-    expect(h1).toHaveTextContent("Home Page");
+  test("should a button with Voir nos produits", () => {
+    const button = screen.getByRole("button");
+    expect(button).toHaveTextContent("Voir nos produits");
   });
 });

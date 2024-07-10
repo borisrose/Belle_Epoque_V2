@@ -1,0 +1,47 @@
+@use "../abstracts/variables";
+
+.not-found {
+  &__main {
+    background-image: url("/assets/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+
+    & > section:first-of-type {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.6);
+
+      h1 {
+        color: rgb(188, 73, 73);
+        font-size: 30px;
+        text-align: center;
+      }
+
+      p {
+        margin-block: 10px;
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+      }
+      a {
+        color: #fff;
+        font-size: small;
+        border: solid #fff 1px;
+        padding: 5px;
+        border-radius: 10px;
+        &:hover {
+          color: variables.$primary-color;
+        }
+      }
+    }
+  }
+}

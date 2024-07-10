@@ -1,10 +1,16 @@
 {
   "total": {
-    "lines": { "total": 10, "covered": 1, "skipped": 0, "pct": 10 },
-    "statements": { "total": 10, "covered": 1, "skipped": 0, "pct": 10 },
-    "functions": { "total": 11, "covered": 1, "skipped": 0, "pct": 9.09 },
-    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "lines": { "total": 12, "covered": 3, "skipped": 0, "pct": 25 },
+    "statements": { "total": 12, "covered": 3, "skipped": 0, "pct": 25 },
+    "functions": { "total": 12, "covered": 2, "skipped": 0, "pct": 16.66 },
+    "branches": { "total": 8, "covered": 4, "skipped": 0, "pct": 50 },
     "branchesTrue": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/Users/borisrose/Desktop/Belle_Epoque_V2/src/ts/components/button/button.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 8, "covered": 4, "skipped": 0, "pct": 50 }
   },
   "/Users/borisrose/Desktop/Belle_Epoque_V2/src/ts/containers/dashboard-container/dashboard-container.ts": {
     "lines": { "total": 1, "covered": 0, "skipped": 0, "pct": 0 },
@@ -55,9 +61,9 @@
     "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
   },
   "/Users/borisrose/Desktop/Belle_Epoque_V2/src/ts/views/home-view/home-view.ts": {
-    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "lines": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
     "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
-    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
     "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
   }
 }

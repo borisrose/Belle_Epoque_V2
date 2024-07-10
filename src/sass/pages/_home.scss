@@ -1,8 +1,17 @@
 .home {
+  // je sous-entends home__main
   &__main {
     background-image: url("/assets/bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      margin: auto;
+      font-size: 30px;
+      color: #fff;
+    }
   }
 }

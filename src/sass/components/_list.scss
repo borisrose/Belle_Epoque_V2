@@ -1,0 +1,10 @@
+.custom-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-block: 10px;
+  gap: 10px;
+  padding: 10px;
+  @media (0 <= width <= 714px) {
+    flex-direction: column;
+  }
+}

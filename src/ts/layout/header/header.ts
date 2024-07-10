@@ -9,6 +9,12 @@ const navBar = () => {
                         Accueil
                       </span>
                   </a>
+
+                  <a href="#menu">
+                    <span>Menu<span>
+                    <i class="fa-solid fa-utensils"></i>
+                  </a>
+
                   <a href="#login">
                       <span aria-label="icone de la page de connexion">
                         <i class="fa-solid fa-right-to-bracket"></i>

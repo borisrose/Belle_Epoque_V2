@@ -1,16 +1,21 @@
+import sealed from "../../utils/decorators/class/sealed";
 import { onNavigateType } from "../../models/types/on-navigate.type";
+import required from "../../utils/decorators/property/required";
 
+@sealed
 export default class HomeContainer {
   onNavigate: onNavigateType;
 
-  constructor(onNavigate: onNavigateType) {
+  homeMenuButton: HTMLButtonElement;
+
+  constructor(@required onNavigate: onNavigateType) {
     this.onNavigate = onNavigate;
 
-    const homeMenuButton = document.getElementById(
+    this.homeMenuButton = document.getElementById(
       "home-menu-button"
     ) as HTMLButtonElement;
 
-    homeMenuButton.addEventListener("click", e => this.onClick());
+    this.homeMenuButton.addEventListener("click", this.onClick.bind(this));
   }
 
   onClick() {

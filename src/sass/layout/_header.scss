@@ -43,4 +43,23 @@
       }
     }
   }
+
+  nav {
+    a {
+      text-align: center;
+      @media (0<= width <= 714px) {
+        &:hover {
+          color: variables.$primary-color;
+          &::after {
+            width: 0%;
+          }
+        }
+      }
+      span {
+        @media (0 <= width <= 714px) {
+          display: none;
+        }
+      }
+    }
+  }
 }

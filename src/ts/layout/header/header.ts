@@ -1,24 +1,22 @@
 const navBar = () => {
   return `
              <nav>
-                  <a href=""
-                      <span aria-label="icone de la page d'accueil">
-                        <i class="fa-solid fa-house"></i>
-                      </span>
+                  <a href="">            
+                       <i class="fa-solid fa-house"></i>
                       <span>
                         Accueil
                       </span>
                   </a>
 
                   <a href="#menu">
-                    <span>Menu<span>
                     <i class="fa-solid fa-utensils"></i>
+                    <span>Menu</span>
                   </a>
 
                   <a href="#login">
-                      <span aria-label="icone de la page de connexion">
-                        <i class="fa-solid fa-right-to-bracket"></i>
-                     <span>
+                   
+                      <i class="fa-solid fa-right-to-bracket"></i>
+             
                      <span>
                         Connexion
                      </span>

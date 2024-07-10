@@ -41,6 +41,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "make-coverage-badge": "^1.2.0",
     "prettier": "^3.3.2",
+    "reflect-metadata": "^0.2.2",
     "sass": "^1.77.6",
     "sass-loader": "^14.2.1",
     "style-loader": "^4.0.0",

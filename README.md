@@ -19,8 +19,8 @@
   - [x] Création d'artefacts
   - [ ] Utilisation de secrets
 - Docker
-  - [ ] Création du Dockerfile
-  - [ ] Création du Dockercompose
+  - [x] Création du Dockerfile
+  - [ ] Création du Docker Compose
 - Back-End
   - [ ] Création
 - Front-End
@@ -29,5 +29,4 @@
 
 ## Documentation personnelle
 
-[Github Actions - Authorization](./docs/github-actions/authorization.md)
-[Github Actions - Artifacts](./docs/github-actions/artifacts.md)
+[Notions](https://puffy-magazine-22c.notion.site/828e6aaad1f2426a89d6f66ed2d8ce31?v=c9f00c1316724adab62eeee3b81712c2&pvs=4)

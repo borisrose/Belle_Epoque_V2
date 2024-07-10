@@ -15,6 +15,7 @@
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "types": ["cypress", "jest", "@testing-library/jest-dom"]
   },
   "include": ["src", "__test__/setup-tests.ts"],

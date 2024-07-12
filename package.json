@@ -74,6 +74,6 @@
     ]
   },
   "eslintConfig": {
-    "extends": "./.github/linters/eslintrc.ymlk"
+    "extends": "./.github/linters/.eslintrc.yml"
   }
 }

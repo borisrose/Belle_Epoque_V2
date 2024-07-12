@@ -7,6 +7,10 @@
   width: 400px;
   height: 150px;
 
+  @media (0 <= width <= 714px) {
+    width: 100%;
+  }
+
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;

@@ -1,10 +1,13 @@
 import HomeContainer from "./src/ts/containers/home-container/home-container";
+import LogContainer from "./src/ts/containers/log-container/log-container";
 import MenuContainer from "./src/ts/containers/menu-container/menu-container";
 import header from "./src/ts/layout/header/header";
 import { onNavigateType } from "./src/ts/models/types/on-navigate.type";
 import homeView from "./src/ts/views/home-view/home-view";
+import contactView from "./src/ts/views/contact-view/contact-view";
 import menuView from "./src/ts/views/menu-view/menu-view";
 import notFoundView from "./src/ts/views/not-found-view/not-found-view";
+import logView from "./src/ts/views/log-view/log-view";
 
 declare global {
   interface Window {
@@ -33,9 +36,21 @@ export const navigateToPage: onNavigateType = (h: string) => {
       app.innerHTML += homeView();
       new HomeContainer(window.onNavigate);
       break;
+    case "#contact":
+      console.log("✅ You are on contact page");
+      app.innerHTML += contactView();
+      break;
     case "#menu":
       app.innerHTML += menuView();
       new MenuContainer(window.onNavigate);
+      break;
+    case "#login":
+      app.innerHTML += logView(true);
+      new LogContainer(window.onNavigate, true);
+      break;
+    case "#register":
+      app.innerHTML += logView(false);
+      new LogContainer(window.onNavigate, false);
       break;
     default:
       app.innerHTML = "";

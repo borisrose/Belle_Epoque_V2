@@ -13,6 +13,7 @@
 @use "./src/sass/components/form";
 @use "./src/sass/components/list";
 @use "./src/sass/components/menu-item";
+@use "./src/sass/components/message";
 
 //---------------PAGES---------
 @use "./src/sass/pages/home";
@@ -20,3 +21,4 @@
 @use "./src/sass/pages/dashboard";
 @use "./src/sass/pages/menu";
 @use "./src/sass/pages/not-found";
+@use "./src/sass/pages/contact";

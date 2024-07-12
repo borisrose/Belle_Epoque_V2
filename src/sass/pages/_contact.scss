@@ -1,4 +1,4 @@
-.menu {
+.contact {
   &__main {
     background-image: url("/assets/bg.jpg");
     background-position: center;
@@ -6,15 +6,11 @@
     background-repeat: no-repeat;
     background-blend-mode: color;
     background-color: rgba(0, 0, 0, 0.6);
-  }
+    align-items: center;
+    justify-content: center;
 
-  &__items {
-    display: flex;
-    flex-direction: column;
-
-    @media (0 <= width <= 714px) {
-      align-items: center;
-      width: 100%;
+    & > section:first-of-type {
+      width: 50%;
     }
   }
 }
